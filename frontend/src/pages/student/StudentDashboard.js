@@ -20,7 +20,8 @@ import StudentComplain from './StudentComplain';
 import Logout from '../Logout'
 import AccountMenu from '../../components/AccountMenu';
 import { AppBar, Drawer } from '../../components/styles';
-
+import Quiz from './Quiz/Quiz';
+import Spellathon from './Spellathon/Spellathon'
 const StudentDashboard = () => {
     const [open, setOpen] = useState(true);
     const toggleDrawer = () => {
@@ -79,6 +80,8 @@ const StudentDashboard = () => {
                         <Route path="/Student/subjects" element={<StudentSubjects />} />
                         <Route path="/Student/attendance" element={<ViewStdAttendance />} />
                         <Route path="/Student/complain" element={<StudentComplain />} />
+                        <Route path="/Student/quiz" element={<Quiz />} />
+                        <Route path="/Student/spellathon" element={<Spellathon />} />
 
                         <Route path="/logout" element={<Logout />} />
                     </Routes>

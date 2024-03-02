@@ -19,7 +19,7 @@ const StudentProfile = () => {
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <Box display="flex" justifyContent="center">
-                <Avatar alt="Student Avatar" sx={{ width: 150, height: 150 }}>
+                <Avatar alt="Student Avatar" sx={{ width: 150, height: 150 }} >
                   {String(currentUser.name).charAt(0)}
                 </Avatar>
               </Box>

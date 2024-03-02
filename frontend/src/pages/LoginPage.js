@@ -53,6 +53,7 @@ const LoginPage = ({ role }) => {
             const email = event.target.email.value;
             const password = event.target.password.value;
 
+
             if (!email || !password) {
                 if (!email) setEmailError(true);
                 if (!password) setPasswordError(true);

@@ -4,6 +4,7 @@ import { Container, Grid, Box, Button } from '@mui/material';
 import styled from 'styled-components';
 import { LightPurpleButton } from '../components/buttonStyles';
 import Navbar from './Navbar'
+import homephoto from '../assets/students.png'
 
 const Homepage = () => {
     return (
@@ -12,7 +13,7 @@ const Homepage = () => {
             <StyledContainer>
                 <Grid container spacing={0}>
                     <Grid item xs={12} md={6}>
-                        <img src="https://www.harbingergroup.com/wp-content/uploads/2023/05/Gamification_-Social-Media-Preview-Image.webp" alt="students" style={{ width: '100%', height: '500px' }}
+                        <img src={homephoto} alt="students" style={{ width: '100%', height: '500px' }}
                         />
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -59,6 +60,7 @@ const Homepage = () => {
 export default Homepage;
 
 const StyledContainer = styled(Container)`
+margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
