@@ -9,8 +9,9 @@ import AnnouncementOutlinedIcon from '@mui/icons-material/AnnouncementOutlined';
 import ClassOutlinedIcon from '@mui/icons-material/ClassOutlined';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import QuizIcon from '@mui/icons-material/Quiz';
-// import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import SpellcheckIcon from '@mui/icons-material/Spellcheck';
+import GamepadIcon from '@mui/icons-material/Gamepad';
+
 const StudentSideBar = () => {
     const location = useLocation();
     return (
@@ -51,6 +52,12 @@ const StudentSideBar = () => {
                         <SpellcheckIcon color={location.pathname.startsWith("/Student/spellgame") ? 'primary' : 'inherit'} />
                     </ListItemIcon>
                     <ListItemText primary="Spellathon Game" />
+                </ListItemButton>
+                <ListItemButton component={Link} to="/Student/matchinggame">
+                    <ListItemIcon>
+                        <GamepadIcon color={location.pathname.startsWith("/Student/matchinggame") ? 'primary' : 'inherit'} />
+                    </ListItemIcon>
+                    <ListItemText primary="Matching Game" />
                 </ListItemButton>
             </React.Fragment>
             <Divider sx={{ my: 1 }} />

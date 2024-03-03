@@ -22,6 +22,7 @@ import AccountMenu from '../../components/AccountMenu';
 import { AppBar, Drawer } from '../../components/styles';
 import Quiz from './Quiz/Quiz';
 import Spellathon from './Spellathon/Spellathon'
+import MatchingGame from './MatchingGame/MatchingGame';
 const StudentDashboard = () => {
     const [open, setOpen] = useState(true);
     const toggleDrawer = () => {
@@ -82,6 +83,7 @@ const StudentDashboard = () => {
                         <Route path="/Student/complain" element={<StudentComplain />} />
                         <Route path="/Student/quiz" element={<Quiz />} />
                         <Route path="/Student/spellathon" element={<Spellathon />} />
+                        <Route path="/Student/matchinggame" element={<MatchingGame />} />
 
                         <Route path="/logout" element={<Logout />} />
                     </Routes>
