@@ -44,7 +44,7 @@ const StudentSideBar = () => {
                     <ListItemIcon>
                         <QuizIcon color={location.pathname.startsWith("/Student/quiz") ? 'primary' : 'inherit'} />
                     </ListItemIcon>
-                    <ListItemText primary="Quiz Game" />
+                    <ListItemText primary="Identify Object Game" />
                 </ListItemButton>
                 <ListItemButton component={Link} to="/Student/spellathon">
                     <ListItemIcon>
