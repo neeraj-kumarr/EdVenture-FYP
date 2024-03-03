@@ -59,7 +59,7 @@ export default function QuizCreate() {
     const [imageUrl, setImageUrl] = useState();
     const [showAlert, setShowAlert] = useState(false);
 
-    const handleStartGame = () => {
+    const handleSubmit = () => {
         setShowAlert(true);
     };
     const defaultProps = {
@@ -108,7 +108,7 @@ export default function QuizCreate() {
                         <h1 style={{ fontFamily: 'cursive', textDecoration: 'underline' }}>Create Identify Object Game</h1>
                         <TableContainer component={Paper}>
                             <Table aria-label="simple table">
-                                <TableBody>
+                                <TableBody style={{ background: '#eeeefa' }}>
                                     <TableRow>
                                         <TableCell component="th" scope="row">
                                             <Typography variant="h6">
@@ -231,12 +231,13 @@ export default function QuizCreate() {
                         </TableContainer>
                         <div style={{ padding: '20px' }}>
                             <Button
-                                variant="contained"
+                                type="primary" success
+
                                 size="large"
                                 style={{ display: 'flex', marginInline: 'auto' }}
-                                onClick={handleStartGame}
+                                onClick={handleSubmit}
                             >
-                                Start Game
+                                Submit
                             </Button>
 
                             {showAlert && (
