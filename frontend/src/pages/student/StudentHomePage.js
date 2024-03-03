@@ -64,7 +64,7 @@ const StudentHomePage = () => {
                         </StyledPaper>
                     </Grid>
                     <Grid item xs={12} md={4} lg={3}>
-                        <ChartContainer>
+                        {/* <ChartContainer>
                             {
                                 response ?
                                     <Typography variant="h6">No Attendance Found</Typography>
@@ -89,7 +89,7 @@ const StudentHomePage = () => {
                                         }
                                     </>
                             }
-                        </ChartContainer>
+                        </ChartContainer> */}
                     </Grid>
                     <Grid item xs={12}>
                         <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>

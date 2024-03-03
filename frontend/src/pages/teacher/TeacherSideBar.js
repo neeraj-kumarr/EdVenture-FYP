@@ -35,6 +35,12 @@ const TeacherSideBar = () => {
                     </ListItemIcon>
                     <ListItemText primary="Complain" />
                 </ListItemButton>
+                <ListItemButton component={Link} to="/Teacher/quizcreate">
+                    <ListItemIcon>
+                        <AnnouncementOutlinedIcon color={location.pathname.startsWith("/Teacher/quizcreate") ? 'primary' : 'inherit'} />
+                    </ListItemIcon>
+                    <ListItemText primary="Create Identify Game " />
+                </ListItemButton>
             </React.Fragment>
             <Divider sx={{ my: 1 }} />
             <React.Fragment>
