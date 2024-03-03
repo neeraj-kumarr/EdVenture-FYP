@@ -24,6 +24,7 @@ import TeacherProfile from './TeacherProfile';
 import TeacherViewStudent from './TeacherViewStudent';
 import StudentExamMarks from '../admin/studentRelated/StudentExamMarks';
 import QuizCreate from './Quiz/QuizCreate';
+import SpellathonCreate from './Spellathon/SpellathonCreate';
 
 const TeacherDashboard = () => {
     const [open, setOpen] = useState(true);
@@ -84,6 +85,7 @@ const TeacherDashboard = () => {
 
                         <Route path="/Teacher/class" element={<TeacherClassDetails />} />
                         <Route path="/Teacher/quizcreate" element={<QuizCreate />} />
+                        <Route path="/Teacher/spellathoncreate" element={<SpellathonCreate />} />
                         <Route path="/Teacher/class/student/:id" element={<TeacherViewStudent />} />
 
                         <Route path="/Teacher/class/student/attendance/:studentID/:subjectID" element={<StudentAttendance situation="Subject" />} />

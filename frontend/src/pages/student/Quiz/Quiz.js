@@ -60,10 +60,10 @@ const Quiz = () => {
     };
 
     return (
-        <>
+        <div style={{ padding: '20px', background: "url('https://www.shutterstock.com/image-photo/identify-clarify-concept-market-customer-260nw-2060053274.jpg')", backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             {showInstructions && (
                 <>
-                    <Box className="instructions" sx={{ marginTop: '10px', display: 'flex', justifyContent: 'center', alignContent: 'center', flexDirection: 'column', flexWrap: 'wrap', padding: '15px' }} >
+                    <Box className="instructions" sx={{ marginTop: '10px', display: 'flex', alignContent: 'center', flexDirection: 'column', flexWrap: 'wrap', padding: '15px', height: '100vh' }} >
                         <h1 style={{ fontFamily: 'cursive' }}>Identify Object Game</h1>
                         <h3>Instructions:</h3>
                         <Box sx={{ display: 'flex', alignContent: 'center', justifyContent: 'center' }}>
@@ -75,8 +75,8 @@ const Quiz = () => {
                                 <li>You may play the game as many times as you like.</li>
                             </ul>
                         </Box>
+                        <Button variant="contained" size="small" style={{ display: 'flex', marginInline: 'auto' }} onClick={startGame}>Start Game</Button>
                     </Box>
-                    <Button variant="contained" size="small" style={{ display: 'flex', marginInline: 'auto' }} onClick={startGame}>Start Game</Button>
                 </>
             )}
             {!showInstructions && (
@@ -131,7 +131,7 @@ const Quiz = () => {
                     </div>
                 </Box>
             )}
-        </>
+        </div>
     );
 };
 

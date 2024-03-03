@@ -118,7 +118,7 @@ const GFGWordGame = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container" style={{ padding: '20px', background: "url('https://hougumlaw.com/wp-content/uploads/2016/05/light-website-backgrounds-light-color-background-images-light-color-background-images-for-website-1024x640.jpg')", backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             {showInstructions && (
                 <>
                     <h1 style={{ fontFamily: 'cursive' }}>Spellathon</h1>

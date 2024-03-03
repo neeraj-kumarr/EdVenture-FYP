@@ -78,7 +78,7 @@ function MatchingGame() {
     };
 
     return (
-        <div className="container">
+        <div className="container" style={{ padding: '20px', background: "url('https://www.digitalscrapper.com/blog/wp-content/uploads/2018/03/QT-Faded-Paper-IMG01.jpg')", backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             {showInstructions && (
                 <>
                     <div className="instructions" style={{ padding: '15px' }}>

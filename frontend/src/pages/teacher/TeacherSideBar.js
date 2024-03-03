@@ -8,6 +8,9 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import AnnouncementOutlinedIcon from '@mui/icons-material/AnnouncementOutlined';
 import ClassOutlinedIcon from '@mui/icons-material/ClassOutlined';
 import { useSelector } from 'react-redux';
+import QuizIcon from '@mui/icons-material/Quiz';
+import SpellcheckIcon from '@mui/icons-material/Spellcheck';
+import GamepadIcon from '@mui/icons-material/Gamepad';
 
 const TeacherSideBar = () => {
     const { currentUser } = useSelector((state) => state.user);
@@ -37,9 +40,15 @@ const TeacherSideBar = () => {
                 </ListItemButton>
                 <ListItemButton component={Link} to="/Teacher/quizcreate">
                     <ListItemIcon>
-                        <AnnouncementOutlinedIcon color={location.pathname.startsWith("/Teacher/quizcreate") ? 'primary' : 'inherit'} />
+                        <QuizIcon color={location.pathname.startsWith("/Teacher/quizcreate") ? 'primary' : 'inherit'} />
                     </ListItemIcon>
                     <ListItemText primary="Create Identify Game " />
+                </ListItemButton>
+                <ListItemButton component={Link} to="/Teacher/spellathoncreate">
+                    <ListItemIcon>
+                        <SpellcheckIcon color={location.pathname.startsWith("/Teacher/spellathoncreate") ? 'primary' : 'inherit'} />
+                    </ListItemIcon>
+                    <ListItemText primary="Create Spell Game " />
                 </ListItemButton>
             </React.Fragment>
             <Divider sx={{ my: 1 }} />
