@@ -25,9 +25,7 @@ const Homepage = () => {
 
                             </StyledTitle>
                             <StyledText>
-                                Streamline school management, class organization, and add students and faculty.
-                                Seamlessly track attendance, assess performance, and provide feedback.
-                                Access records, view marks, and communicate effortlessly.
+                                Experience interactive and gamified learning environments tailored for enhanced student engagement. Seamlessly manage attendance, monitor progress, and deliver assessments. Empower students to provide feedback and foster communication effortlessly.
                             </StyledText>
                             <StyledBox>
                                 <StyledLink to="/choose">

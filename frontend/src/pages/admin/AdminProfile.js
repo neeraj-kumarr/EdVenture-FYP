@@ -14,7 +14,7 @@ const AdminProfile = () => {
 
     // const navigate = useNavigate()
     // const dispatch = useDispatch();
-        const { currentUser } = useSelector((state) => state.user);
+    const { currentUser } = useSelector((state) => state.user);
     // const { currentUser, response, error } = useSelector((state) => state.user);
     // const address = "Admin"
 
